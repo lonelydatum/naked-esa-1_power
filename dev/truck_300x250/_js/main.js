@@ -1,27 +1,21 @@
 import {tlEnd, tlSpark} from '../../_common/js/Common.js'
 
 function start() {
-
-
-	const tl = new TimelineMax()
+const tl = new TimelineMax()
 	tl.set('.frame1', {opacity:1})
 	
-	tl.add('remove-spark', '+=.6')
-	
-	// tl.call(()=>{
-	// 	tlSpark.pause()
-	// 	TweenLite.to('#spark', .3, {opacity:0})
-	// }, [], 'remove-spark')
-
-	tl.add('t1', '+=1')
-	tl.from('#wrapper', .7, {y:'+=200'}, 't1')
-	tl.from('#spark', .5, {opacity:0}, 't1')
-	tl.add(tlSpark)
-
+	TweenMax.to('#sparkMain', .05, {opacity:.85, yoyo:true, repeat:32})	
 	
 
-	tl.add(tlEnd, 't1')
 
+	tl.from('#wrapper', .7, {y:'+=200'}, '+=1')
+
+	tl.add('t2', '+=2.3')
+	tl.from('#bg2', .3, {opacity:0}, 't2')
+	tl.to('#t1', .3, {opacity:0}, 't2')
+	tl.from('#t2', .5, {opacity:0}, 't2+=.3')
+	
+	tl.add(tlEnd)	
 }
 
 start()

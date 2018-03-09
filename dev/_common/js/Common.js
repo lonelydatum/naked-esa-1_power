@@ -5,12 +5,9 @@ const size = {w:banner.offsetWidth, h:banner.offsetHeight}
 
 
 const tlEnd = new TimelineMax()
-tlEnd.from('#wrapper', .7, {y:'+=200'}, '+=1')
+
 	
 
-	tlEnd.add('t2', '+=2.3')
-	tlEnd.to('#t1', .3, {opacity:0}, 't2')
-	tlEnd.from('#t2', .5, {opacity:0}, 't2+=.3')
 	
 	
 	

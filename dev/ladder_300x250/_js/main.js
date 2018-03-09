@@ -12,6 +12,10 @@ function start() {
 	tlSpark.to('#bg-spark', .7, {clip: `rect(0px 300px 90px 0px)`})
 
 
+	tl.from('#wrapper', .7, {y:'+=200'}, '+=1')
+	tl.add('t2', '+=2.3')
+	tl.to('#t1', .3, {opacity:0}, 't2')
+	tl.from('#t2', .5, {opacity:0}, 't2+=.3')
 	
 	tl.add(tlEnd)	
 	

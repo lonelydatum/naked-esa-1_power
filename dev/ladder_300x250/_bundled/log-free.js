@@ -10,11 +10,6 @@ var banner = document.getElementById('banner');
 var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 
 var tlEnd = new TimelineMax();
-tlEnd.from('#wrapper', .7, { y: '+=200' }, '+=1');
-
-tlEnd.add('t2', '+=2.3');
-tlEnd.to('#t1', .3, { opacity: 0 }, 't2');
-tlEnd.from('#t2', .5, { opacity: 0 }, 't2+=.3');
 
 tlEnd.add('shift', '+=2');
 tlEnd.set('.frame2', { opacity: 1 }, 'shift');
@@ -44,6 +39,11 @@ function start() {
 	var tlSpark = new TimelineMax();
 	TweenMax.to('#sparkMain', .05, { opacity: .85, yoyo: true, repeat: 32 });
 	tlSpark.to('#bg-spark', .7, { clip: 'rect(0px 300px 90px 0px)' });
+
+	tl.from('#wrapper', .7, { y: '+=200' }, '+=1');
+	tl.add('t2', '+=2.3');
+	tl.to('#t1', .3, { opacity: 0 }, 't2');
+	tl.from('#t2', .5, { opacity: 0 }, 't2+=.3');
 
 	tl.add(_commonJsCommonJs.tlEnd);
 }

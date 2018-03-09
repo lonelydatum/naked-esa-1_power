@@ -10,11 +10,6 @@ var banner = document.getElementById('banner');
 var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 
 var tlEnd = new TimelineMax();
-tlEnd.from('#wrapper', .7, { y: '+=200' }, '+=1');
-
-tlEnd.add('t2', '+=2.3');
-tlEnd.to('#t1', .3, { opacity: 0 }, 't2');
-tlEnd.from('#t2', .5, { opacity: 0 }, 't2+=.3');
 
 tlEnd.add('shift', '+=2');
 tlEnd.set('.frame2', { opacity: 1 }, 'shift');
@@ -38,23 +33,19 @@ exports.tlSpark = tlSpark;
 var _commonJsCommonJs = require('../../_common/js/Common.js');
 
 function start() {
-
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });
 
-	tl.add('remove-spark', '+=.6');
+	TweenMax.to('#sparkMain', .05, { opacity: .85, yoyo: true, repeat: 32 });
 
-	// tl.call(()=>{
-	// 	tlSpark.pause()
-	// 	TweenLite.to('#spark', .3, {opacity:0})
-	// }, [], 'remove-spark')
+	tl.from('#wrapper', .7, { y: '+=200' }, '+=1');
 
-	tl.add('t1', '+=1');
-	tl.from('#wrapper', .7, { y: '+=200' }, 't1');
-	tl.from('#spark', .5, { opacity: 0 }, 't1');
-	tl.add(_commonJsCommonJs.tlSpark);
+	tl.add('t2', '+=2.3');
+	tl.from('#bg2', .3, { opacity: 0 }, 't2');
+	tl.to('#t1', .3, { opacity: 0 }, 't2');
+	tl.from('#t2', .5, { opacity: 0 }, 't2+=.3');
 
-	tl.add(_commonJsCommonJs.tlEnd, 't1');
+	tl.add(_commonJsCommonJs.tlEnd);
 }
 
 start();

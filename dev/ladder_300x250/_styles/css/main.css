@@ -171,7 +171,18 @@ sup {
   font-style: normal;
 }
 
-.frame1 #spark {
+.frame1 #sparkMain {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.frame1 #sparkMain #spark {
   -webkit-transform: translate(178px, -27px);
   -ms-transform: translate(178px, -27px);
   transform: translate(178px, -27px);
@@ -180,6 +191,10 @@ sup {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
+}
+
+.frame1 #sparkMain #bg-spark {
+  clip: rect(0px 300px 90px 250px);
 }
 
 .frame1 #wrapper {

@@ -171,10 +171,29 @@ sup {
   font-style: normal;
 }
 
+.frame {
+  background-color: #f79540;
+}
+
+.frame1 {
+  opacity: 1;
+}
+
+.frame1 #bg2 {
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 .frame1 #spark {
-  -webkit-transform: translate(178px, -27px);
-  -ms-transform: translate(178px, -27px);
-  transform: translate(178px, -27px);
+  -webkit-transform: translate(145px, -41px);
+  -ms-transform: translate(145px, -41px);
+  transform: translate(145px, -41px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -213,10 +232,6 @@ sup {
 
 .frame1 .text span {
   position: absolute;
-}
-
-.frame2 {
-  background-color: #467b98;
 }
 
 .frame2 p {
@@ -284,7 +299,7 @@ sup {
   height: 50px;
   text-align: center;
   line-height: 47px;
-  background-color: #f79540;
+  background-color: #467b98;
   font-size: 21px;
 }
 

@@ -3,11 +3,18 @@
 @import '../../../_common/styles/common.scss';
 
 
+.frame{
+	background-color: #f79540;
+}
 
 .frame1 {
-	// opacity: 1;
+	opacity: 1;
+
+	#bg2{
+		@include pos(0, 0);
+	}
 	#spark{
-		@include pos(178, -27);
+		@include pos(145, -41);
 	}
 	
 	#wrapper{
@@ -39,7 +46,7 @@
 
 .frame2{
 	// opacity: 1;
-	background-color: #467b98;
+	
 	
 	p{
 		font-size: 26px;
@@ -72,7 +79,7 @@
 		height: 50px;
 		text-align: center;
 		line-height: 47px;
-		background-color: #f79540;		
+		background-color: #467b98;		
 		font-size: 21px;
 		// border: 1px solid red;
 		// color: blue;

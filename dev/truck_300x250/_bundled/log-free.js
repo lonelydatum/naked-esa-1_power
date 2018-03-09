@@ -20,12 +20,7 @@ tlEnd.from('.frame2 p', .3, { opacity: 0 });
 tlEnd.to('.frame2 p', .3, { opacity: 0 }, '+=2');
 tlEnd.to('.frame3', .3, { opacity: 1 });
 
-var tlSpark = new TimelineMax({ repeat: 222, yoyo: true });
-tlSpark.to('#spark', .05, { opacity: .9 });
-// tlSpark.pause()
-
 exports.tlEnd = tlEnd;
-exports.tlSpark = tlSpark;
 
 },{}],2:[function(require,module,exports){
 'use strict';
@@ -34,9 +29,10 @@ var _commonJsCommonJs = require('../../_common/js/Common.js');
 
 function start() {
 	var tl = new TimelineMax();
-	tl.set('.frame1', { opacity: 1 });
 
-	TweenMax.to('#sparkMain', .05, { opacity: .85, yoyo: true, repeat: 32 });
+	TweenMax.to('#sparkMain', .05, { opacity: .8, yoyo: true, repeat: 43 });
+
+	tl.set('.frame1', { opacity: 1 });
 
 	tl.from('#wrapper', .7, { y: '+=200' }, '+=1');
 

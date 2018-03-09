@@ -1,0 +1,97 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	// opacity: 1;
+	#spark{
+		@include pos(178, -27);
+	}
+	
+	#wrapper{
+		@include pos(0, 0);
+		font-size: 25px;	
+		bottom: -19px;
+		// border: 1px solid red;
+		width: 100%;
+		height: 143px;
+	}
+	#shape-bg{
+		
+		
+		
+		// opacity: .8;
+	}
+
+	.text{
+		@include pos(0, 0);
+		text-align: right;
+		right: 26px;
+		bottom: 44px;
+		span{
+			position: absolute;
+			// margin-left: 1px;
+		}
+	}
+}
+
+.frame2{
+	// opacity: 1;
+	background-color: #467b98;
+	
+	p{
+		font-size: 26px;
+		line-height: 30px;
+		text-align: center;	
+		// color: green;
+		width: 100%;
+	}
+	#f2-a{
+		@include pos(0, 39);
+	}
+	#f2-b{
+		font-size: 81px;	
+		@include pos(0, 126);
+	}
+	#f2-c{
+		@include pos(3, 179);
+	}
+}
+
+.frame3{
+	// opacity: 1;
+	#logo{
+		@include pos(62, 26);
+	}
+
+	#cta{
+		@include pos(43, 126);
+		width: 211px;
+		height: 50px;
+		text-align: center;
+		line-height: 47px;
+		background-color: #f79540;		
+		font-size: 21px;
+		// border: 1px solid red;
+		// color: blue;
+	}
+
+	#hash{
+		@include pos(0, 202);
+		font-size: 20px;
+		// color: blue;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+#banner{
+	
+	width: 300px;
+	height: 250px;
+}
+

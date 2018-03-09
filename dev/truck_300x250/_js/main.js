@@ -1,10 +1,14 @@
-import {tlEnd, tlSpark} from '../../_common/js/Common.js'
+import {tlEnd} from '../../_common/js/Common.js'
 
 function start() {
 const tl = new TimelineMax()
+
+	TweenMax.to('#sparkMain', .05, {opacity:.8, yoyo:true, repeat:43})	
+
+
 	tl.set('.frame1', {opacity:1})
 	
-	TweenMax.to('#sparkMain', .05, {opacity:.85, yoyo:true, repeat:32})	
+	
 	
 
 

@@ -22,8 +22,6 @@ const tlEnd = new TimelineMax()
 	tlEnd.to('.frame3', .3, {opacity:1})
 
 
-const tlSpark = new TimelineMax({repeat:222, yoyo:true})
-tlSpark.to('#spark', .05, {opacity:.9})
-// tlSpark.pause()
 
-export {tlEnd, tlSpark}
+
+export {tlEnd}

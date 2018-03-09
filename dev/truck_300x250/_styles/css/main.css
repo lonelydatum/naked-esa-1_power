@@ -190,7 +190,13 @@ sup {
   position: absolute;
 }
 
-.frame1 #spark {
+.frame1 #sparkMain {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.frame1 #sparkMain #spark {
   -webkit-transform: translate(145px, -41px);
   -ms-transform: translate(145px, -41px);
   transform: translate(145px, -41px);

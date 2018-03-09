@@ -20,12 +20,7 @@ tlEnd.from('.frame2 p', .3, { opacity: 0 });
 tlEnd.to('.frame2 p', .3, { opacity: 0 }, '+=2');
 tlEnd.to('.frame3', .3, { opacity: 1 });
 
-var tlSpark = new TimelineMax({ repeat: 222, yoyo: true });
-tlSpark.to('#spark', .05, { opacity: .9 });
-// tlSpark.pause()
-
 exports.tlEnd = tlEnd;
-exports.tlSpark = tlSpark;
 
 },{}],2:[function(require,module,exports){
 'use strict';
@@ -34,14 +29,17 @@ var _commonJsCommonJs = require('../../_common/js/Common.js');
 
 function start() {
 
+	TweenMax.to('#sparkMain', .05, { opacity: .85, yoyo: true, repeat: 32 });
+
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });
-	var tlSpark = new TimelineMax();
-	TweenMax.to('#sparkMain', .05, { opacity: .85, yoyo: true, repeat: 32 });
-	tlSpark.to('#bg-spark', .7, { clip: 'rect(0px 300px 90px 0px)' });
 
-	tl.from('#wrapper', .7, { y: '+=200' }, '+=1');
+	tl.add('t1', '+=1');
+	tl.to('#bg-spark', .8, { clip: 'rect(0px 300px 90px 0px)' }, 't1');
+	tl.from('#wrapper', .7, { y: '+=200' }, 't1');
+
 	tl.add('t2', '+=2.3');
+
 	tl.to('#t1', .3, { opacity: 0 }, 't2');
 	tl.from('#t2', .5, { opacity: 0 }, 't2+=.3');
 

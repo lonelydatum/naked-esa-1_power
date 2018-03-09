@@ -180,6 +180,8 @@ sup {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .frame1 #sparkMain #spark {
@@ -193,7 +195,7 @@ sup {
   position: absolute;
 }
 
-.frame1 #sparkMain #bg-spark {
+.frame1 #bg-spark {
   clip: rect(0px 300px 90px 250px);
 }
 

@@ -8,15 +8,18 @@
 	// opacity: 1;
 	#sparkMain{
 		@include pos(0, 0);
+		width: 100%;
+		height:100%;
+		// background-color: rgba(0,0,0,.12);
 		#spark{
 			@include pos(178, -27);
 		}
-		#bg-spark{
+		
+	}
+	#bg-spark{
 			// border: 1px solid blue;
 			clip: rect(0px 300px 90px 250px);
 		}
-	}
-	
 	
 	#wrapper{
 		@include pos(0, 0);

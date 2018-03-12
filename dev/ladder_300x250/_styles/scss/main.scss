@@ -5,7 +5,7 @@
 
 
 .frame1 {
-	opacity: 1;
+	// opacity: 1;
 	#sparkMain{
 		@include pos(0, 0);
 		width: 100%;
@@ -13,6 +13,8 @@
 		// background-color: rgba(0,0,0,.12);
 		#spark{
 			@include pos(178, -27);
+			// @include pos(130, 3);
+			// @include pos(62, -5);
 			// @include pos(110, 0);
 		}
 		
@@ -20,6 +22,7 @@
 	#bg-spark{
 			// border: 1px solid blue;
 			clip: rect(0px 300px 90px 250px);
+			// clip: rect(0px 300px 90px 0px);
 		}
 	
 	#wrapper{

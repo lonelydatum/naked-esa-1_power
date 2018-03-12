@@ -3,7 +3,7 @@ import {tlEnd} from '../../_common/js/Common.js'
 function start() {
 const tl = new TimelineMax()
 
-	TweenMax.to('#sparkMain', .05, {opacity:.8, yoyo:true, repeat:43})	
+	TweenMax.to('#sparkMain', .05, {opacity:.8, yoyo:true, repeat:999})	
 
 
 	tl.set('.frame1', {opacity:1})

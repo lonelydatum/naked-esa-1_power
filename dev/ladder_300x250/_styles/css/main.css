@@ -171,10 +171,6 @@ sup {
   font-style: normal;
 }
 
-.frame1 {
-  opacity: 1;
-}
-
 .frame1 #sparkMain {
   -webkit-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);

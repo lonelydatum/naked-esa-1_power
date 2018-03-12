@@ -12,13 +12,13 @@ var banner = document.getElementById('banner');
 var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 
 function spark() {
-	var time = .25;
+	var time = .28;
 	var tlSparkMain = new TimelineMax({ repeat: 0, yoyo: true });
 	var tlSparkFlash = new TimelineMax();
 	// tlSparkFlash.to('#spark', .07, {opacity:0.8, yoyo:true, repeat:77, rotation:'+=0', scale:.95})
 
 	var tlSparkBez = new TimelineMax();
-	var values = [{ x: 178, y: -27 }, { x: 130, y: 3 }, { x: 130, y: 3 }, { x: 62, y: -5 }];
+	var values = [{ x: 178, y: -27 }, { x: 130, y: 3 }, { x: 130, y: 3 }, { x: 84, y: 4 }];
 
 	var bez = {
 		bezier: { type: "cubic", values: values }

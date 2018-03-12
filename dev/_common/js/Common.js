@@ -6,7 +6,7 @@ const size = {w:banner.offsetWidth, h:banner.offsetHeight}
 
 
 function spark(){
-	const time = .25
+	const time = .28
 	const tlSparkMain = new TimelineMax({repeat:0, yoyo:true})
 	const tlSparkFlash = new TimelineMax()
 	// tlSparkFlash.to('#spark', .07, {opacity:0.8, yoyo:true, repeat:77, rotation:'+=0', scale:.95})
@@ -16,7 +16,7 @@ function spark(){
 			{x:178, y:-27}, 
 			{x:130, y:3}, 
 			{x:130, y:3}, 
-			{x:62, y:-5},
+			{x:84, y:4},
 		]
 		
 	const bez = {

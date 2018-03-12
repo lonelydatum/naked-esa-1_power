@@ -25,8 +25,8 @@ function spark(){
 
 
 	const delay = 0
-	tlSparkBez.to("#spark", time, {...bez, ease:Bounce.easeInOut});
-	tlSparkMain.add(tlSparkBez, delay)
+	// tlSparkBez.to("#spark", time, {...bez, ease:Bounce.easeInOut});
+	// tlSparkMain.add(tlSparkBez, delay)
 	tlSparkMain.to('#bg-spark', time*1.2, {clip: `rect(0px 300px 90px 0px)`, ease:Bounce.easeInOut}, delay)
 	tlSparkMain.from('#sparkMain', .1, {opacity:.8, yoyo:true, repeat:999}, delay)
 	

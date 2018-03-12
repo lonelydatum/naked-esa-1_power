@@ -37,6 +37,7 @@ function spark() {
 function end() {
 	var tlEnd = new TimelineMax();
 
+	var ratio = size.h / 312;
 	tlEnd.add('shift', '+=2');
 	tlEnd.set('.frame2', { opacity: 1 }, 'shift');
 	tlEnd.from('.frame2', .8, { y: size.h }, 'shift');

@@ -37,6 +37,7 @@ function spark() {
 function end() {
 	var tlEnd = new TimelineMax();
 
+	var ratio = size.h / 312;
 	tlEnd.add('shift', '+=2');
 	tlEnd.set('.frame2', { opacity: 1 }, 'shift');
 	tlEnd.from('.frame2', .8, { y: size.h }, 'shift');
@@ -60,7 +61,7 @@ var _commonJsCommonJs = require('../../_common/js/Common.js');
 function start() {
 	var tl = new TimelineMax();
 
-	TweenMax.to('#sparkMain', .05, { opacity: .8, yoyo: true, repeat: 999 });
+	TweenMax.to('#sparkMain', .05, { opacity: .65, yoyo: true, repeat: 150 });
 
 	tl.set('.frame1', { opacity: 1 });
 
@@ -71,7 +72,7 @@ function start() {
 	tl.to('#t1', .3, { opacity: 0 }, 't2');
 	tl.from('#t2', .5, { opacity: 0 }, 't2+=.3');
 
-	tl.add(_commonJsCommonJs.tlEnd);
+	tl.add((0, _commonJsCommonJs.end)());
 }
 
 start();

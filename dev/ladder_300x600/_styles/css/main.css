@@ -208,45 +208,43 @@ sup {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  font-size: 25px;
-  bottom: -19px;
+  font-size: 35px;
+  bottom: 176px;
   width: 100%;
-  height: 143px;
+  height: 146px;
+  line-height: 40px;
 }
 
 .frame1 .text {
-  -webkit-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate(0px, 0px);
+  -webkit-transform: translate(25px, 155px);
+  -ms-transform: translate(25px, 155px);
+  transform: translate(25px, 155px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  text-align: right;
+  text-align: center;
   right: 26px;
   bottom: 44px;
+  width: 100%;
 }
 
 .frame1 .text span {
   position: absolute;
 }
 
-.frame2 {
-  background-color: #467b98;
-}
-
 .frame2 p {
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 38px;
+  line-height: 49px;
   text-align: center;
   width: 100%;
 }
 
 .frame2 #f2-a {
-  -webkit-transform: translate(0px, 39px);
-  -ms-transform: translate(0px, 39px);
-  transform: translate(0px, 39px);
+  -webkit-transform: translate(0px, 115px);
+  -ms-transform: translate(0px, 115px);
+  transform: translate(0px, 115px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -256,9 +254,9 @@ sup {
 
 .frame2 #f2-b {
   font-size: 81px;
-  -webkit-transform: translate(0px, 126px);
-  -ms-transform: translate(0px, 126px);
-  transform: translate(0px, 126px);
+  -webkit-transform: translate(0px, 339px);
+  -ms-transform: translate(0px, 339px);
+  transform: translate(0px, 339px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -267,9 +265,9 @@ sup {
 }
 
 .frame2 #f2-c {
-  -webkit-transform: translate(3px, 179px);
-  -ms-transform: translate(3px, 179px);
-  transform: translate(3px, 179px);
+  -webkit-transform: translate(4px, 404px);
+  -ms-transform: translate(4px, 404px);
+  transform: translate(4px, 404px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -278,10 +276,10 @@ sup {
 }
 
 .frame3 #logo {
-  width: 171px;
-  -webkit-transform: translate(62px, 26px);
-  -ms-transform: translate(62px, 26px);
-  transform: translate(62px, 26px);
+  width: 202px;
+  -webkit-transform: translate(46px, 378px);
+  -ms-transform: translate(46px, 378px);
+  transform: translate(46px, 378px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -290,39 +288,41 @@ sup {
 }
 
 .frame3 #cta {
-  -webkit-transform: translate(43px, 126px);
-  -ms-transform: translate(43px, 126px);
-  transform: translate(43px, 126px);
+  -webkit-transform: translate(74px, 113px);
+  -ms-transform: translate(74px, 113px);
+  transform: translate(74px, 113px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  width: 211px;
-  height: 50px;
+  width: 153px;
+  height: 102px;
   text-align: center;
-  line-height: 47px;
+  line-height: 33px;
   background-color: #f79540;
-  font-size: 21px;
+  font-size: 30px;
+  padding-top: 18px;
 }
 
 .frame3 #hash {
-  -webkit-transform: translate(0px, 202px);
-  -ms-transform: translate(0px, 202px);
-  transform: translate(0px, 202px);
+  -webkit-transform: translate(0px, 256px);
+  -ms-transform: translate(0px, 256px);
+  transform: translate(0px, 256px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  font-size: 20px;
+  font-size: 34px;
   width: 100%;
+  line-height: 37px;
   text-align: center;
 }
 
 #banner {
   width: 300px;
-  height: 250px;
+  height: 600px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -59,25 +59,21 @@ exports.spark = spark;
 var _commonJsCommonJs = require('../../_common/js/Common.js');
 
 function start() {
+
 	var tl = new TimelineMax();
-
-	TweenMax.to('#sparkMain', .05, { opacity: .65, yoyo: true, repeat: 150 });
-
 	tl.set('.frame1', { opacity: 1 });
 
-	tl.from('#wrapper', .7, { y: '+=200' }, '+=1');
+	(0, _commonJsCommonJs.spark)();
 
-	tl.add('t2', '+=2.3');
-	tl.from('#bg2', .3, { opacity: 0 }, 't2');
-	tl.to('#t1', .3, { opacity: 0 }, 't2');
-	tl.from('#t2', .5, { opacity: 0 }, 't2+=.3');
+	tl.add('t2', 2);
+	tl.from('#t1', .7, { opacity: 0 }, 't2');
+	tl.to('#t1', .3, { opacity: 0 }, 't2+=3');
+	tl.from('#t2', .5, { opacity: 0 }, 't2+=3.3');
 
 	tl.add((0, _commonJsCommonJs.end)());
 }
 
 start();
-
-module.exports = {};
 
 },{"../../_common/js/Common.js":1}]},{},[2])
 

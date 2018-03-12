@@ -1,9 +1,9 @@
-import {tlEnd} from '../../_common/js/Common.js'
+import {end, spark} from '../../_common/js/Common.js'
 
 function start() {
 const tl = new TimelineMax()
 
-	TweenMax.to('#sparkMain', .05, {opacity:.8, yoyo:true, repeat:999})	
+	TweenMax.to('#sparkMain', .05, {opacity:.65, yoyo:true, repeat:150})	
 
 
 	tl.set('.frame1', {opacity:1})
@@ -19,7 +19,7 @@ const tl = new TimelineMax()
 	tl.to('#t1', .3, {opacity:0}, 't2')
 	tl.from('#t2', .5, {opacity:0}, 't2+=.3')
 	
-	tl.add(tlEnd)	
+	tl.add(end())	
 }
 
 start()

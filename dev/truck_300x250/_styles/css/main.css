@@ -297,6 +297,7 @@ sup {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
+  width: 173px;
 }
 
 .frame3 #cta {

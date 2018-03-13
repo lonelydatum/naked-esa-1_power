@@ -5,6 +5,8 @@ Object.defineProperty(exports, '__esModule', {
 	value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 TweenLite.defaultEase = Power2.easeInOut;
 var banner = document.getElementById('banner');
 var size = { w: banner.offsetWidth, h: banner.offsetHeight };
@@ -36,12 +38,26 @@ function spark() {
 
 function end() {
 	var tlEnd = new TimelineMax();
+	var ratio = size.w / size.h;
+	var data = {
+		portrait: {
+			frame2: { y: size.h },
+			wrapper: { y: '-=' + size.h }
+		},
+		landscape: {
+			frame2: { x: size.w },
+			wrapper: { x: '-=' + size.w }
+		}
+	};
+	console.log(ratio);
+	var direction = ratio < 1.5 ? 'portrait' : 'landscape';
+	var result = data[direction];
 
-	var ratio = size.h / 312;
+	console.log(result);
 	tlEnd.add('shift', '+=2');
 	tlEnd.set('.frame2', { opacity: 1 }, 'shift');
-	tlEnd.from('.frame2', .8, { y: size.h }, 'shift');
-	tlEnd.to('#wrapper', .8, { y: '-=' + size.h }, 'shift');
+	tlEnd.from('.frame2', .8, _extends({}, result.frame2), 'shift');
+	tlEnd.to('#wrapper', .8, _extends({}, result.wrapper), 'shift');
 	tlEnd.from('.frame2 p', .3, { opacity: 0 });
 
 	tlEnd.to('.frame2 p', .3, { opacity: 0 }, '+=2');

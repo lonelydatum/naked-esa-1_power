@@ -2,13 +2,10 @@
 
 @import '../../../_common/styles/common.scss';
 
-
-.frame{
-	background-color: #f79540;
-}
+@import '../../../_common/styles/truck.scss';
 
 .frame1 {
-	opacity: 1;
+	// opacity: 1;
 
 	#bg2{
 		@include pos(0, 0);

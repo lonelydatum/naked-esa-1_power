@@ -38,12 +38,26 @@ function spark(){
 
 function end(){
 	const tlEnd = new TimelineMax()
-
-	const ratio = size.h/312
+	const ratio = size.w/size.h
+	const data = {
+		portrait: {
+			frame2: {y:size.h},
+			wrapper: {y:`-=${size.h}`}
+		},
+		landscape: {
+			frame2: {x:size.w},
+			wrapper: {x:`-=${size.w}`}
+		}
+	}
+	console.log(ratio);
+	const direction = ratio < 1.5 ? 'portrait' : 'landscape'
+	const result = data[direction]
+	
+	console.log(result);
 	tlEnd.add('shift', '+=2')
 	tlEnd.set('.frame2', {opacity:1}, 'shift')
-	tlEnd.from('.frame2', .8, {y:size.h}, 'shift')
-	tlEnd.to('#wrapper', .8, {y:`-=${size.h}`}, 'shift')
+	tlEnd.from('.frame2', .8, {...result.frame2}, 'shift')
+	tlEnd.to('#wrapper', .8, {...result.wrapper}, 'shift')
 	tlEnd.from('.frame2 p', .3, {opacity:0})
 
 	tlEnd.to('.frame2 p', .3, {opacity:0}, '+=2')

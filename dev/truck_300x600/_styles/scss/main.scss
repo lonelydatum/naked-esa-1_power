@@ -1,0 +1,120 @@
+
+
+@import '../../../_common/styles/common.scss';
+@import '../../../_common/styles/truck.scss';
+
+
+
+
+.frame1 {
+	// opacity: 1;
+
+	#bg2{
+		@include pos(0, 0);
+	}
+
+	#sparkMain{
+		width: 100%;
+		height:100%;
+		// background-color: rgba(0,0,0,.9);
+		@include pos(0, 0);
+		#spark{
+			@include pos(145, -26);
+		}	
+	}
+	
+	
+	#wrapper{
+		@include pos(0, 280);
+		
+		
+		// border: 1px solid red;
+		width: 100%;
+		height: 143px;
+		img{
+			// opacity: .5;
+		}
+	}
+	#shape-bg{
+		
+		
+		
+		// opacity: .8;
+	}
+
+	.text{
+		font-size: 34px;	
+		line-height: 40px;
+		@include pos(0, 157);
+		text-align: center;
+		width: 100%;
+		bottom: 44px;
+		// color: green;
+		span{
+			position: absolute;
+			// margin-left: 1px;
+		}
+	}
+}
+
+.frame2{
+	// opacity: 1;
+	
+	
+	p{
+		font-size: 39px;
+		line-height: 50px;
+		text-align: center;	
+		// color: green;
+		width: 100%;
+	}
+	#f2-a{
+		@include pos(0, 113);
+	}
+	#f2-b{
+		font-size: 81px;	
+		@include pos(0, 337);
+	}
+	#f2-c{
+		@include pos(3, 403);
+	}
+}
+
+.frame3{
+	// opacity: 1;
+	#logo{
+		@include pos(50, 379);
+		width: 196px;
+	}
+
+	#cta{
+		@include pos(74, 112);
+		width: 154px;
+		height: 102px;
+		text-align: center;
+		line-height: 34px;
+		
+		font-size: 30px;
+		// border: 1px solid red;
+		// color: blue;
+		padding-top: 17px;
+	}
+
+	#hash{
+		@include pos(0, 255);
+		font-size: 33px;
+		line-height: 37px;
+		// color: blue;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+#banner{
+	
+	width: 300px;
+	height: 600px;
+}
+

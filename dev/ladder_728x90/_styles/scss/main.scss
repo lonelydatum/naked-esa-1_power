@@ -1,0 +1,116 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	// opacity: 1;
+	#sparkMain{
+		@include pos(0, 0);
+		width: 100%;
+		height:100%;
+		// background-color: rgba(0,0,0,.12);
+		#spark{
+			@include pos(249, -35);
+			// @include pos(130, 3);
+			// @include pos(84, 4);
+			// @include pos(110, 0);
+		}
+		
+	}
+	#bg-spark{
+			// border: 1px solid blue;
+			clip: rect(0px 355px 90px 355px);
+			
+		}
+	
+	#wrapper{
+		@include pos(0, 0);
+		font-size: 21px;	
+		right: 0px;
+		line-height: 24px;
+		// border: 1px solid red;
+		width: 100%;
+		height: 143px;
+		#shape-bg{
+			@include pos(0, 0);
+			right:-9px;
+			height:90px;
+			// opacity: .5;
+		}
+	}
+	
+
+	.text{
+		@include pos(0, 19);
+		text-align: right;
+		right: 30px;
+		// color: pink;
+		
+		span{
+			position: absolute;
+			// margin-left: 1px;
+		}
+	}
+}
+
+.frame2{
+	// opacity: 1;
+	background-color: #467b98;
+	
+	p{
+		font-size: 29px;
+		line-height: 30px;
+		
+		// color: green;
+		width: 100%;
+	}
+	#f2-a{
+		@include pos(55, 30);
+	}
+	#f2-b{
+		font-size: 64px;	
+		@include pos(472, 29);
+	}
+	#f2-c{
+		@include pos(616, 29);
+	}
+}
+
+.frame3{
+	// opacity: 1;
+	#logo{
+		width: 134px;
+		@include pos(28, 16);
+	}
+
+	#cta{
+		@include pos(510, 30);
+		width: 187px;
+		height: 31px;
+		text-align: center;
+		line-height: 28px;
+			
+		font-size: 20px;
+		// border: 1px solid red;
+		// color: blue;
+	}
+
+	#hash{
+		@include pos(234, 31);
+		font-size: 26px;
+		// color: blue;
+		width: 100%;
+		// text-align: center;
+	}
+}
+
+
+
+#banner{
+	
+	width: 728px;
+	height: 90px;
+}
+

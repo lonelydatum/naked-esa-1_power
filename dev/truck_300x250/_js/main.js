@@ -1,12 +1,8 @@
 import {end, spark} from '../../_common/js/Common.js'
+import  truck from '../../_common/js/Truck.js'
 
 function start() {
-const tl = new TimelineMax()
-
-	TweenMax.to('#sparkMain', .075, {opacity:.6, yoyo:true, repeat:150})	
-
-
-	tl.set('.frame1', {opacity:1})
+	const tl = truck()
 	
 	
 	
@@ -22,7 +18,10 @@ const tl = new TimelineMax()
 	tl.add(end())	
 }
 
+truck()
 start()
+
+
 
 
 

@@ -72,14 +72,34 @@ exports.spark = spark;
 },{}],2:[function(require,module,exports){
 'use strict';
 
-var _commonJsCommonJs = require('../../_common/js/Common.js');
-
-function start() {
+Object.defineProperty(exports, '__esModule', {
+	value: true
+});
+function truck() {
+	TweenMax.to('#sparkMain', .075, { opacity: .6, yoyo: true, repeat: 150 });
 	var tl = new TimelineMax();
 
-	TweenMax.to('#sparkMain', .075, { opacity: .6, yoyo: true, repeat: 150 });
-
 	tl.set('.frame1', { opacity: 1 });
+
+	return tl;
+}
+
+exports['default'] = truck;
+module.exports = exports['default'];
+
+},{}],3:[function(require,module,exports){
+'use strict';
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _commonJsCommonJs = require('../../_common/js/Common.js');
+
+var _commonJsTruckJs = require('../../_common/js/Truck.js');
+
+var _commonJsTruckJs2 = _interopRequireDefault(_commonJsTruckJs);
+
+function start() {
+	var tl = (0, _commonJsTruckJs2['default'])();
 
 	tl.from('#wrapper', .7, { y: '+=200' }, '+=1');
 
@@ -91,11 +111,12 @@ function start() {
 	tl.add((0, _commonJsCommonJs.end)());
 }
 
+(0, _commonJsTruckJs2['default'])();
 start();
 
 module.exports = {};
 
-},{"../../_common/js/Common.js":1}]},{},[2])
+},{"../../_common/js/Common.js":1,"../../_common/js/Truck.js":2}]},{},[3])
 
 
 //# sourceMappingURL=main.js.map

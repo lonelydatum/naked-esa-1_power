@@ -312,15 +312,15 @@ sup {
 }
 
 .frame3 #cta {
-  -webkit-transform: translate(497px, 29px);
-  -ms-transform: translate(497px, 29px);
-  transform: translate(497px, 29px);
+  -webkit-transform: translate(512px, 29px);
+  -ms-transform: translate(512px, 29px);
+  transform: translate(512px, 29px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  width: 204px;
+  width: 185px;
   height: 33px;
   text-align: center;
   line-height: 31px;
